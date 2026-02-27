@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3</h1>
+
+    <script>
+      // 1. Constante TVA
+      const TAUX_TVA = 0.20;
+
+      // 2. Variable prix HT
+      let prixHT = 150;
+
+      // 3. Calcul du prix TTC
+      let prixTTC = prixHT + (TAUX_TVA * prixHT);
+
+      // 4. Affichage console avec template literals
+      console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${TAUX_TVA * prixHT} € | Prix TTC : ${prixTTC} €`);
+
+      // 5. Test de modification (décommenter pour tester)
+      // TAUX_TVA = 0.30; 
+      // Remarque: Si on essaie de changer TAUX_TVA, la console affiche une erreur 
+      // "TypeError: Assignment to constant variable" car c'est une constante.
+    </script>
+  </body>
+</html>
