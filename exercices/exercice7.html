@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 7</h1>
+    <h1>Calculatrice de cercle</h1>
+    <div id="rayon"></div>
+    <div id="perimetre"></div>
+    <div id="surface"></div>
+
+    <script>
+
+      // 1. Déclaration de la constante PI avec Math.PI
+      const PI = Math.PI;
+
+      // 2. Demander le rayon et convertir en nombre
+      let rayon = Number(window.prompt("Entrez le rayon du cercle (en cm) :"));
+
+      // 3. Calcul du périmètre et de la surface
+      let perimetre = 2 * PI * rayon;
+      let surface = PI * rayon * rayon;
+
+      // 4. Affichage dans les <div> avec arrondissement à 2 décimales
+      document.getElementById("rayon").innerHTML = `Rayon : ${rayon} cm`;
+      document.getElementById("perimetre").innerHTML = `Périmètre : ${perimetre.toFixed(2)} cm`;
+      document.getElementById("surface").innerHTML = `Surface : ${surface.toFixed(2)} cm²`;
+    </script>
+  </body>
+</html>
